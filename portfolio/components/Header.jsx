@@ -11,42 +11,43 @@ const Header = () => {
   };
 
   return (
-    <header className="z-[999] relative">
-      <nav className="fixed flex items-center justify-between p-5 h-[5rem] w-full border-white border-opacity-40 bg-white bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] md:h-[5rem]">
-        <Link href={"/"} className="font-bold text-2xl tracking-widest">
-          DEV<span className="text-orange-600">N</span>
-          <span className="text-blue-600">UX</span>
-        </Link>
-        <div className="flex justify-center items-center">
-          {/* Menu button */}
-          <button
-            onClick={toggleMenu}
-            className="text-xl lg:hidden focus:outline-none"
+    <header className="z-[999] fixed flex items-center justify-between px-4 md:px-12 h-20 w-full border-white border-opacity-40 bg-white bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ">
+      <Link href={"/"} className="font-bold text-2xl tracking-widest ">
+        DEV<span className="text-orange-600">N</span>
+        <span className="text-blue-600">UX</span>
+      </Link>
+      <nav>
+        <button className="md:hidden" onClick={toggleMenu}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-8 h-8 text-gray-900"
           >
-            Menu
-          </button>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
 
-          {/* Navigation links */}
-          <ul
-            className={`${
-              showMenu ? "block" : "hidden"
-            } lg:flex flex-col lg:flex-row lg:ml-5 mr-5`}
-          >
-            {links.map(({ label, path }) => (
-              <li
-                key={path}
-                className="my-2 lg:my-0 lg:ml-5 text-gray-900 hover:text-blue-400 transition"
-              >
-                <Link href={path} className="text-xl">
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <button className="text-xl text-gray-50 py-2 px-3 focus:outline-none bg-gray-900 rounded">
-            Contact Me
-          </button>
-        </div>
+        <ul
+          className={`${
+            showMenu ? "block" : "hidden"
+          }  fixed left-0 top-20 right-0 min-h-screen bg-white bg-opacity-40 space-y-4 p-4 md:space-y-0 md:space-x-6 md:relative md:flex md:min-h-0 md:items-center md:p-0 md:top-0 md:bg-transparent`}
+        >
+          {links.map((link) => (
+            <li
+              key={link.path}
+              className="text-gray-900 hover:text-blue-400 transition font-medium"
+            >
+              <Link href={link.path}>{link.label}</Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );
