@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <section className="flex flex-col  w-full justify-center items-center space-y-8  p-4 md:p-8">
+    <section className="flex flex-col  w-full justify-center items-center space-y-8  p-4 ">
       <div className="w-full md:w-1/4 text-center mb-4 md:mb-0">
         <Image
           className="rounded-full object-cover mx-auto"
@@ -15,7 +15,7 @@ export default function Intro() {
         />
       </div>
       <div className="w-full md:w-[80%] lg:w-[50%]">
-        <p className="text-xl md:text-2xl">
+        <p className="text-xl md:text-2xl xl:text-3xl ">
           Hello! I'm<span className="font-bold text-blue-400"> Bharath</span>,
           {" a"}
           <span className="font-bold text-blue-400">
