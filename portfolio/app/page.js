@@ -1,6 +1,8 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Divider from "@/components/Divider";
 import Expereince from "@/components/Expereince";
+import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import { Skills } from "@/components/Skills";
 
@@ -15,7 +17,8 @@ export default function Home() {
    <Divider/>
    <Expereince/>
    <Divider/>
-   
+   <Contact/>
+   <Footer/>
     </main>
   )
 }
