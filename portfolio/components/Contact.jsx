@@ -34,7 +34,7 @@ export default function Contact() {
           <FaGithub className="text-[3rem] text-gray-600 hover:text-blue-800 transition" />
         </Link>
         <Link
-          href="https://www.behance.net/bharathsurya021"
+          href="https://www.behance.net/bharathsurya"
           target="_blank"
           rel="noopener noreferrer"
         >
