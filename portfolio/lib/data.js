@@ -20,3 +20,5 @@ export const links = [
         path:'#exp'
     },
 ]
+
+export const skillsData =["HTML","CSS","Bootstrap","Tailwind","ANT Design","Material UI","Javascript","ReactJs","NodeJs","Express","MongoDB","Redux","PostgreSQL","MySQL","Python","Git"]

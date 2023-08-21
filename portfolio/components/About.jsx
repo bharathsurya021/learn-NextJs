@@ -9,7 +9,7 @@ function About() {
       <h2 className="text-2xl font-semibold">About me</h2>
 
       <div className=" flex flex-col justify-center items-center w-full sm:w-70%] xl:w-[65%]">
-        <p className="text-xl font-medium  ">
+        <p className="text-xl font-medium text-gray-900  ">
           I am a passionate and driven individual with a diverse background that
           spans across engineering, user interface (UI) design, and web
           development. My journey commenced with a solid foundation in
@@ -17,14 +17,14 @@ function About() {
           IIT Delhi, culminating in my graduation in 2019.
         </p>
         <br />
-        <p className="text-xl font-medium  ">
+        <p className="text-xl font-medium text-gray-900  ">
           Building upon this educational foundation, I embarked on a journey of
           exploration and growth. In the year 2020-2021, I delved into the world
           of Engineering Services Examination (ESE) in Delhi, showcasing my
           commitment to continuously challenge myself and expand my horizons.
         </p>
         <br />
-        <p className="text-xl font-medium  ">
+        <p className="text-xl font-medium text-gray-900  ">
           However, my pursuit of knowledge didn't stop there. Fuelled by a
           desire to create visually appealing and user-friendly digital
           experiences, I learned the art of UI design from a college senior.
@@ -33,7 +33,7 @@ function About() {
           functionality.
         </p>
         <br />
-        <p className="text-xl font-medium  ">
+        <p className="text-xl font-medium text-gray-900  ">
           As I delved deeper into the digital realm, I found myself drawn
           towards the dynamic field of web development. With an insatiable
           thirst for learning, I took the initiative to harness online courses
@@ -49,7 +49,7 @@ function About() {
         </p>
 
         <br />
-        <p className="text-xl font-medium  ">
+        <p className="text-xl font-medium text-gray-900 ">
           In essence, I am an individual fueled by curiosity, passion, and the
           incessant drive to evolve. My journey has been marked by a continuous
           pursuit of excellence, as I shape my identity through the fusion of
